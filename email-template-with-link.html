@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Registration - SCPL 2026</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
+    <table role="presentation" style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td style="padding: 40px 0; text-align: center;">
+                <table role="presentation" style="width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); padding: 30px; text-align: center; border-radius: 8px 8px 0 0;">
+                            <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: bold;">🏆 New Team Registration</h1>
+                            <p style="margin: 10px 0 0 0; color: #ffffff; font-size: 14px;">{{tournament_name}}</p>
+                        </td>
+                    </tr>
+
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 30px;">
+                            <p style="margin: 0 0 20px 0; color: #333333; font-size: 16px;">Dear Admin,</p>
+                            <p style="margin: 0 0 30px 0; color: #666666; font-size: 14px;">A new team has registered for the tournament. Please review the details:</p>
+
+                            <!-- Quick Summary -->
+                            <table role="presentation" style="width: 100%; margin-bottom: 25px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden;">
+                                <tr>
+                                    <td style="background-color: #f97316; padding: 12px 15px;">
+                                        <h3 style="margin: 0; color: #ffffff; font-size: 16px; font-weight: bold;">📋 REGISTRATION SUMMARY</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px; background-color: #fafafa;">
+                                        <table role="presentation" style="width: 100%;">
+                                            <tr>
+                                                <td style="padding: 8px 0; color: #666666; font-size: 14px; width: 40%;"><strong>Company:</strong></td>
+                                                <td style="padding: 8px 0; color: #333333; font-size: 14px;">{{company_name}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 8px 0; color: #666666; font-size: 14px;"><strong>Team Name:</strong></td>
+                                                <td style="padding: 8px 0; color: #f97316; font-size: 14px; font-weight: bold;">{{team_name}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 8px 0; color: #666666; font-size: 14px;"><strong>Captain:</strong></td>
+                                                <td style="padding: 8px 0; color: #333333; font-size: 14px;">{{captain_name}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 8px 0; color: #666666; font-size: 14px;"><strong>Contact:</strong></td>
+                                                <td style="padding: 8px 0; color: #333333; font-size: 14px;">{{captain_mobile}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 8px 0; color: #666666; font-size: 14px;"><strong>Total Players:</strong></td>
+                                                <td style="padding: 8px 0; color: #333333; font-size: 14px;">{{total_players}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 8px 0; color: #666666; font-size: 14px;"><strong>Submitted:</strong></td>
+                                                <td style="padding: 8px 0; color: #333333; font-size: 14px;">{{submission_date}}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- View Details Button -->
+                            <table role="presentation" style="width: 100%; margin: 30px 0;">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <a href="{{registration_link}}" style="display: inline-block; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 8px; font-size: 16px; font-weight: bold; box-shadow: 0 4px 6px rgba(249, 115, 22, 0.3);">
+                                            📄 View Complete Registration Details
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Link -->
+                            <div style="background-color: #f9f9f9; padding: 15px; border-radius: 6px; border-left: 4px solid #f97316; margin: 20px 0;">
+                                <p style="margin: 0 0 8px 0; color: #666666; font-size: 12px; font-weight: bold;">REGISTRATION LINK:</p>
+                                <a href="{{registration_link}}" style="color: #f97316; font-size: 13px; word-break: break-all; text-decoration: none;">{{registration_link}}</a>
+                            </div>
+
+                            <p style="margin: 20px 0 0 0; color: #666666; font-size: 14px;">Click the button above to view complete team details including all player information and uploaded documents.</p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #f9f9f9; padding: 20px; text-align: center; border-radius: 0 0 8px 8px; border-top: 1px solid #e0e0e0;">
+                            <p style="margin: 0; color: #999999; font-size: 12px;">Best regards,<br><strong style="color: #f97316;">SCPL 2026 Registration System</strong></p>
+                            <p style="margin: 10px 0 0 0; color: #cccccc; font-size: 11px;">This is an automated email. Please do not reply.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
